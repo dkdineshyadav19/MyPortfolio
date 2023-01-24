@@ -1,38 +1,343 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* common clases */
+.flex-class{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* animations  */
+
+/* ........................mobile view */
+
+/* navbar */
+.navbar{
+  color: var(--secColor);
+}
+.hero-btn{
+  background-color: var(--terColor);
+}
+.hero-btn:hover{
+  color:var(--terColor);
+  border: 1px solid var(--secColor);
+}
+/* hero */
+  .hero{
+    margin-top: 150px;
+    margin-bottom: 120px;
+   
+  }
+  .hello{
+    font-size: 1rem;
+  }
+  .intro{
+    font-size: 1.4rem;
+  }
+/* work  */
+.work{
+
+}
+.project{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.project-desc{
+  padding: 20px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color:rgba(0, 0, 0, 0.65);
+  
+}
+.project-desc:hover{
+  
+  opacity: 1;
+  visibility: visible;
+}
+.project-title>h1{
+  font-size: 1.2rem;
+}
+.links{
+  margin-bottom: 1rem;
+}
+.circle{
+  margin-right: -10px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #000000;
+  z-index: 1;
+}
+.github{
+  width: 36px;
+  height: 36px;
+}
+.circle1{
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: var(--terColor);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.link{
+  width: 36px;
+}
+.project-title>p{
+  font-size: 1rem;
+}
+
+.more{
+  margin-top: -3.8rem;
+}
+.image-size{
+  width: 97%;
+  height: 467px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  margin-bottom:3.813rem;
+}
+.project1{
+  background-image: url("/public/1.png");
+ 
+}
+.project2{
+  background-image: url("/public/2.png");
+}
+.project3{
+  background-image: url("/public/3.png");
+}
+.project4{
+  background-image: url("/public/4.png");
+}
+.project5{
+  background-image: url("/public/5.png");
+}
+.project6{
+  background-image: url("/public/6.png");
+}
+.project7{
+  background-image: url("/public/7.png");
+}
+.project8{
+  background-image: url("/public/8.png");
+}
+.project9{
+  background-image: url("/public/9.png");
+}
+.project10{
+  background-image: url("/public/10.png");
+}
+
+/* services */
+.services{
+  margin-top: 3.813rem;
+}
+.colorText{
+  color: var(--terColor);
+}
+.service-heading{
+  margin-bottom: 71px;
+}
+.service-border{
+  border-left: 2px solid var(--terColor); 
+}
+.service1,.service2,.service3{
+  width: 324px;
+  height: 450px;
+  margin-bottom: 5rem;
+}
+.service1-logo{
+    width:65px;
+    height: 52px;
+}
+.service-name{
+  margin-left: 22px;
+  margin-bottom: 30px;
+}
+.service-number{
+  margin-top: 50px;
+  margin-left: 45px;
+  font-size: 1.2rem;
+  margin-bottom: 112px;
+  color:var(--terColor)
+}
+.service-text{
+  margin-left: 55px;
+}
+.service-name-heading{
+  margin-left: 22px;
+  font-size: 1.7rem;
+}
+/* contact */
+  .contact{
+    margin-top: 120px;
   }
-  to {
-    transform: rotate(360deg);
+  .social>div{
+    margin: 1rem;
   }
+  .social-logo{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .call-logo{
+    background-image: url('/public//call.png');
+  }
+  .call-logo:hover{
+   background-image:url('/public/call1.png');
+  }
+  .instagram-logo{
+    background-image: url('/public/github-box.png');
+  }
+  .instagram-logo:hover{
+    background-image:url('/public/github-box1.png');
+   }
+   .linkedin-logo{
+    background-image: url('/public/linkedin.png');
+  }
+   .linkedin-logo:hover{
+    background-image:url('/public/linkedin1.png');
+   }
+   .gmail-logo{
+    background-image: url('/public/gmail.png');
+  }
+   .gmail-logo:hover{
+    background-image:url('/public/gmail1.png');
+   }
+  .copywright{
+    font-size: 0.5rem;
+  }
+/* ..........................tablet */
+@media screen and  (min-width:768px)  and  (max-width:1024px){
+  
+
+/* navbar */
+
+/* hero */
+  .hero{
+    width: 75%;
+  }
+  .intro{
+    font-size: 2rem;
+  }
+  .hello{
+    font-size: 1.2rem;
+  }
+/* work  */
+.project{
+  gap:1rem;
+  margin-bottom: 1rem;
+}
+.more{
+  margin-top: 1rem;
+}
+.btn{
+  margin-top: 2rem;
+}
+.image-size{
+  margin-bottom:0rem;
+}
+  .project1,.project6{
+    width: 66.5%;
+    height: 400px;
+  }
+  .project2,.project3,.project4,.project5,.project7,.project8,.project9,.project10{
+    width: 20%;
+    height: 400px;
+    flex-grow: 1
+  }
+/* services */
+.service1,.service2,.service3{
+  
+}
+.service-name-heading{
+  font-size: 0.99rem;
+}
+.service-text{
+  font-size:0.8rem;
+  margin-right: 0.1rem;
+}
+.service1-logo{
+  width:50px;
+  height:42px;
+}
+/* contact */
+}
+
+/* ........................desktop */
+@media screen and  (min-width:1024px) {
+/* navbar */
+
+/* hero */
+.hero{
+  width: 75%;
+}
+.intro{
+  font-size: 2.5rem;
+}
+.hello{
+  font-size: 1.2rem;
+}
+/* work  */
+.project{
+  gap:1rem;
+  margin-bottom: 1rem;
+}
+.more{
+  margin-top: 1rem;
+}
+.btn{
+  margin-top: 2rem;
+}
+.image-size{
+  margin-bottom:0rem;
+}
+  .project1,.project6{
+    width: 66.5%;
+    height: 550px;
+  }
+  .project2,.project3,.project4,.project5,.project7,.project8,.project9,.project10{
+    width: 20%;
+    height: 550px;
+    flex-grow: 1
+  }
+/* services */
+.service{
+  gap:5%;
+}
+.service-number{
+  font-size: 1.7rem;
+}
+.service1,.service2,.service3{
+  height: 500px;
+
+}
+.service-name-heading{
+  font-size: 1.5rem;
+}
+.service-text{
+  font-size: 1rem;
+}
+.service1-logo{
+  width:74px;
+  height:64px;
+}
+/* contact */
+
+
+/* ........................extra small */
+
+/* navbar */
+
+/* hero */
+
+/* work  */
+
+/* services */
+
+/* contact */
 }
