@@ -1,66 +1,74 @@
 /* common clases */
-.flex-class{
+.flex-class {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
 /* animations  */
 
 /* ........................mobile view */
 
 /* navbar */
-.navbar{
+.navbar {
   color: var(--secColor);
 }
-.hero-btn{
+.navbar > h1 {
+  font-weight: bold;
+}
+.nav-btn {
+  margin-top: -0.3rem;
+}
+.hero-btn {
   background-color: var(--terColor);
 }
-.hero-btn:hover{
-  color:var(--terColor);
+.hero-btn:hover {
+  color: var(--terColor);
   border: 1px solid var(--secColor);
 }
 /* hero */
-  .hero{
-    margin-top: 150px;
-    margin-bottom: 120px;
-   
-  }
-  .hello{
-    font-size: 1rem;
-  }
-  .intro{
-    font-size: 1.4rem;
-  }
-/* work  */
-.work{
-
+.hero {
+  margin-top: 150px;
+  margin-bottom: 120px;
 }
-.project{
+.hello {
+  font-size: 1rem;
+}
+.intro {
+  font-size: 1.4rem;
+}
+/* work  */
+.work {
+}
+.project {
   width: 100%;
   margin-bottom: 3rem;
 }
-.project-desc{
+.project-desc {
   padding: 20px;
   opacity: 0;
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  background-color:rgba(0, 0, 0, 0.65);
-  
+  background-color: rgba(0, 0, 0, 0.65);
 }
-.project-desc:hover{
-  
-  opacity: 1;
+.project-desc:hover {
   visibility: visible;
+  opacity: 1;
 }
-.project-title>h1{
-  font-size: 1.2rem;
+.project-title > h1 {
+  font-size: 1.1rem;
 }
-.links{
+.links {
   margin-bottom: 1rem;
 }
-.circle{
+.circle {
   margin-right: -10px;
   height: 64px;
   width: 64px;
@@ -68,11 +76,11 @@
   background-color: #000000;
   z-index: 1;
 }
-.github{
+.github {
   width: 36px;
   height: 36px;
 }
-.circle1{
+.circle1 {
   height: 64px;
   width: 64px;
   border-radius: 50%;
@@ -80,264 +88,285 @@
   background-color: var(--terColor);
 }
 
-.link{
+.link {
   width: 36px;
 }
-.project-title>p{
+.project-title > p {
   font-size: 1rem;
 }
 
-.more{
+.more {
   margin-top: -3.8rem;
 }
-.image-size{
+.image-size {
   width: 97%;
   height: 467px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
-  margin-bottom:3.813rem;
+  margin-bottom: 3.813rem;
 }
-.project1{
-  background-image: url("/public/1.png");
- 
+.project1 {
+  background-image: url("/public/2.1.jpg");
 }
-.project2{
-  background-image: url("/public/2.png");
+.project2 {
+  background-image: url("/public/1.jpg");
 }
-.project3{
+.project3 {
   background-image: url("/public/3.png");
 }
-.project4{
-  background-image: url("/public/4.png");
+.project4 {
+  background-image: url("/public/4.jpg");
 }
-.project5{
+.project5 {
   background-image: url("/public/5.png");
 }
-.project6{
-  background-image: url("/public/6.png");
+.project6 {
+  background-image: url("/public/6.jpg");
 }
-.project7{
-  background-image: url("/public/7.png");
+.project7 {
+  background-image: url("/public/7.jpg");
 }
-.project8{
-  background-image: url("/public/8.png");
+.project8 {
+  background-image: url("/public/8.jpg");
 }
-.project9{
-  background-image: url("/public/9.png");
+.project9 {
+  background-image: url("/public/9.jpg");
 }
-.project10{
-  background-image: url("/public/10.png");
+.project10 {
+  background-image: url("/public/10.jpg");
 }
 
 /* services */
-.services{
+.services {
   margin-top: 3.813rem;
 }
-.colorText{
+.colorText {
   color: var(--terColor);
 }
-.service-heading{
+.service-heading {
   margin-bottom: 71px;
+  font-weight: bold;
 }
-.service-border{
-  border-left: 2px solid var(--terColor); 
+.service-border {
+  border-left: 2px solid var(--terColor);
 }
-.service1,.service2,.service3{
+.service1,
+.service2,
+.service3 {
   width: 324px;
   height: 450px;
   margin-bottom: 5rem;
 }
-.service1-logo{
-    width:65px;
-    height: 52px;
+.service1-logo {
+  width: 65px;
+  height: 52px;
 }
-.service-name{
+.service-name {
   margin-left: 22px;
   margin-bottom: 30px;
 }
-.service-number{
+.service-number {
   margin-top: 50px;
   margin-left: 45px;
   font-size: 1.2rem;
   margin-bottom: 112px;
-  color:var(--terColor)
+  color: var(--terColor);
 }
-.service-text{
+.service-text {
   margin-left: 55px;
 }
-.service-name-heading{
+.service-name-heading {
   margin-left: 22px;
   font-size: 1.7rem;
 }
 /* contact */
-  .contact{
-    margin-top: 120px;
-  }
-  .social>div{
-    margin: 1rem;
-  }
-  .social-logo{
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .call-logo{
-    background-image: url('/public//call.png');
-  }
-  .call-logo:hover{
-   background-image:url('/public/call1.png');
-  }
-  .instagram-logo{
-    background-image: url('/public/github-box.png');
-  }
-  .instagram-logo:hover{
-    background-image:url('/public/github-box1.png');
-   }
-   .linkedin-logo{
-    background-image: url('/public/linkedin.png');
-  }
-   .linkedin-logo:hover{
-    background-image:url('/public/linkedin1.png');
-   }
-   .gmail-logo{
-    background-image: url('/public/gmail.png');
-  }
-   .gmail-logo:hover{
-    background-image:url('/public/gmail1.png');
-   }
-  .copywright{
-    font-size: 0.5rem;
-  }
+.contact {
+  margin-top: 120px;
+}
+.social > a {
+  margin: 1rem;
+}
+.social-logo {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.call-logo {
+  background-image: url("/public//call.png");
+}
+.call-logo:hover {
+  background-image: url("/public/call1.png");
+}
+.instagram-logo {
+  background-image: url("/public/github-box.png");
+}
+.instagram-logo:hover {
+  background-image: url("/public/github-box1.png");
+}
+.linkedin-logo {
+  background-image: url("/public/linkedin.png");
+}
+.linkedin-logo:hover {
+  background-image: url("/public/linkedin1.png");
+}
+.gmail-logo {
+  background-image: url("/public/gmail.png");
+}
+.gmail-logo:hover {
+  background-image: url("/public/gmail1.png");
+}
+.copywright {
+  font-size: 0.5rem;
+}
 /* ..........................tablet */
-@media screen and  (min-width:768px)  and  (max-width:1024px){
-  
-
-/* navbar */
-
-/* hero */
-  .hero{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* navbar */
+  .nav-btn {
+    margin-top: -2.1rem;
+  }
+  /* hero */
+  .hero {
     width: 75%;
   }
-  .intro{
+  .intro {
     font-size: 2rem;
   }
-  .hello{
+  .hello {
     font-size: 1.2rem;
   }
-/* work  */
-.project{
-  gap:1rem;
-  margin-bottom: 1rem;
-}
-.more{
-  margin-top: 1rem;
-}
-.btn{
-  margin-top: 2rem;
-}
-.image-size{
-  margin-bottom:0rem;
-}
-  .project1,.project6{
+  /* work  */
+  .project {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .more {
+    margin-top: 1rem;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+  .image-size {
+    margin-bottom: 0rem;
+  }
+  .project1,
+  .project6 {
     width: 66.5%;
     height: 400px;
   }
-  .project2,.project3,.project4,.project5,.project7,.project8,.project9,.project10{
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project7,
+  .project8,
+  .project9,
+  .project10 {
     width: 20%;
     height: 400px;
-    flex-grow: 1
+    flex-grow: 1;
   }
-/* services */
-.service1,.service2,.service3{
-  
-}
-.service-name-heading{
-  font-size: 0.99rem;
-}
-.service-text{
-  font-size:0.8rem;
-  margin-right: 0.1rem;
-}
-.service1-logo{
-  width:50px;
-  height:42px;
-}
-/* contact */
+  /* services */
+  .service {
+  }
+  .service-name-heading {
+    font-size: 0.99rem;
+  }
+  .service-text {
+    font-size: 0.8rem;
+    margin-right: 0.1rem;
+  }
+  .service1-logo {
+    width: 50px;
+    height: 42px;
+  }
+  /* contact */
 }
 
 /* ........................desktop */
-@media screen and  (min-width:1024px) {
-/* navbar */
+@media screen and (min-width: 1024px) {
+  /* navbar */
+  .nav-btn {
+    margin-top: -2.1rem;
+  }
 
-/* hero */
-.hero{
-  width: 75%;
-}
-.intro{
-  font-size: 2.5rem;
-}
-.hello{
-  font-size: 1.2rem;
-}
-/* work  */
-.project{
-  gap:1rem;
-  margin-bottom: 1rem;
-}
-.more{
-  margin-top: 1rem;
-}
-.btn{
-  margin-top: 2rem;
-}
-.image-size{
-  margin-bottom:0rem;
-}
-  .project1,.project6{
+  /* hero */
+  .hero {
+    width: 75%;
+  }
+  .intro {
+    font-size: 2.5rem;
+  }
+  .hello {
+    font-size: 1.2rem;
+  }
+  /* work  */
+  .project {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .more {
+    margin-top: 1rem;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+  .image-size {
+    margin-bottom: 0rem;
+  }
+  .project1,
+  .project6 {
     width: 66.5%;
     height: 550px;
   }
-  .project2,.project3,.project4,.project5,.project7,.project8,.project9,.project10{
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project7,
+  .project8,
+  .project9,
+  .project10 {
     width: 20%;
     height: 550px;
-    flex-grow: 1
+    flex-grow: 1;
   }
-/* services */
-.service{
-  gap:5%;
-}
-.service-number{
-  font-size: 1.7rem;
-}
-.service1,.service2,.service3{
-  height: 500px;
+  /* services */
+  .service {
+    gap: 5%;
+    justify-content: space-around;
+  }
+  .service-number {
+    font-size: 1.7rem;
+  }
+  .service1,
+  .service2,
+  .service3 {
+    height: 500px;
+  }
+  .service-name-heading {
+    font-size: 1.5rem;
+  }
+  .service-text {
+    font-size: 1rem;
+  }
+  .service1-logo {
+    width: 74px;
+    height: 64px;
+  }
+  /* contact */
 
-}
-.service-name-heading{
-  font-size: 1.5rem;
-}
-.service-text{
-  font-size: 1rem;
-}
-.service1-logo{
-  width:74px;
-  height:64px;
-}
-/* contact */
+  /* ........................extra small */
 
+  /* navbar */
 
-/* ........................extra small */
+  /* hero */
 
-/* navbar */
+  /* work  */
 
-/* hero */
+  /* services */
 
-/* work  */
-
-/* services */
-
-/* contact */
+  /* contact */
 }
