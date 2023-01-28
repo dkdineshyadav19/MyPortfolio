@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className="overlay"></div>
         <Navbar />
         {/* hero section */}
         <div className="hero">

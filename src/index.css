@@ -5,6 +5,7 @@
   --secColor: #ffffff;
   --terColor: #cfbd95;
 }
+
 body {
   background-color: var(--priColor);
   color: var(--secColor);

@@ -12,7 +12,34 @@
   text-decoration: none;
 }
 /* animations  */
-
+.overlay{
+  position: absolute;
+  z-index: 999;
+  background-color: var(--priColor);
+  width: 90%;
+  height: 99%;
+  animation: reveal 1s ease-in forwards;
+  transform-origin: bottom;
+}
+@keyframes reveal{
+  from{
+    transform:scaleY(1);
+  }
+  to{
+    transform:scaleY(0);
+  }
+}
+.hero,.services,.contact,.work{
+  animation: growin 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transform: scale(.4);
+}
+@keyframes growin {
+  
+  to{
+    transform: scale(1);
+  }
+  
+}
 /* ........................mobile view */
 
 /* navbar */
@@ -223,6 +250,15 @@
 }
 /* ..........................tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* animation */
+  .overlay{
+   
+    width: 94%;
+    border:2px solid red;
+   
+   
+
+  }
   /* navbar */
   .nav-btn {
     margin-top: -2.1rem;
@@ -287,6 +323,14 @@
 
 /* ........................desktop */
 @media screen and (min-width: 1024px) {
+  /* animation */
+  .overlay{
+   
+    width: 98%;
+   
+   
+
+  }
   /* navbar */
   .nav-btn {
     margin-top: -2.1rem;
