@@ -89,14 +89,14 @@ function App() {
               <div className="project-desc flex-class flex-column">
                 <div className="links d-flex">
                   <div className="circle flex-class">
-                    <a className="isDisabled" href="/" without rel="noreferrer">
+                    <button className="isDisabled" href="/" without rel="noreferrer" disabled>
                       <img src="./github.png" alt="" className="github" />
-                    </a>
+                    </button>
                   </div>
                   <div className="circle1 flex-class">
-                    <a className="isDisabled" href="/" without rel="noreferrer">
+                    <button className="isDisabled" href="/" disabled>
                       <img src="./link.png" alt="" className="link" />
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="project-title flex-class flex-column">
@@ -123,7 +123,7 @@ function App() {
                       href="https://dkdineshyadav19.github.io/ASP_website/"
                       target="_blank"
                       without
-                      rel="noreferrer"
+                      rel="noreferrer" 
                     >
                       <img src="./link.png" alt="" className="link" />
                     </a>
@@ -139,14 +139,14 @@ function App() {
               <div className="project-desc flex-class flex-column">
                 <div className="links d-flex">
                   <div className="circle flex-class">
-                    <a className="isDisabled" href="/" without rel="noreferrer">
+                    <button className="isDisabled " href="/" disabled>
                       <img src="./github.png" alt="" className="github" />
-                    </a>
+                    </button>
                   </div>
                   <div className="circle1 flex-class">
-                    <a className="isDisabled" href="/" without rel="noreferrer">
+                    <button className="isDisabled" href="/"  disabled>
                       <img src="./link.png" alt="" className="link" />
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="project-title flex-class flex-column">
